@@ -12,7 +12,7 @@ import requests
 import pandas as pd
 
 REDMINE_URL = os.getenv("REDMINE_URL", "https://redmine.dataverse.gr").rstrip("/")
-DEFAULT_PROJECT_ID = os.getenv("REDMINE_PROJECT_ID", "aade-support")
+DEFAULT_PROJECT_ID = os.getenv("REDMINE_PROJECT_ID", "aade")
 PROJECT_ID = input(
     f"Redmine Project ID [default={DEFAULT_PROJECT_ID}]: "
 ).strip() or DEFAULT_PROJECT_ID
